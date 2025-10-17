@@ -2,28 +2,12 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-users = [
-    {
-        "id": 1,
-        "name": "Satoru gozo",
-        "age": 23
-    },
-    {
-        "id": 2,
-        "name": "Sucumba",
-        "age": 120
-    },
-    {
-        "id": 3,
-        "name": "Itaduro",
-        "age": 17
-    },
-]
+code = "PALZRVN1R8LMBDFGQ"
 
 @app.route("/users", methods=["GET"])
-def getUser():
-    return jsonify(users)
+def getCode():
+    return jsonify(code)
 
-print(users[0]["age"])
+print(code)
 
-app.run(port=5000, host="localhost", debug=True)
+app.run(port=5000, host="https://dailygold.onrender.com", debug=True)

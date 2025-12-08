@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-code = "N8ZBW6IZXBVXLJUHQ"
+code = "MKYP9DMY8RRPZUY5S"
 
 @app.route("/", methods=["GET"])
 def getCode():
